@@ -4,7 +4,7 @@ export default function Cabine(props) {
     const options = props.options.map((option, index) => (
         <button
             key={option}
-            onClick={() => props.onSelect(index)}
+            onClick={() => props.onVote(index)}
         >
             {option}
         </button>
