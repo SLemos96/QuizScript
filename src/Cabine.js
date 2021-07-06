@@ -3,10 +3,10 @@ import React from 'react'
 export default function Cabine(props) {
     const options = props.options.map((option, index) => (
         <button
-            key={option}
+            key={option.opcao}
             onClick={() => props.onVote(index)}
         >
-            {option}
+            {option.opcao}
         </button>
         ))
 
