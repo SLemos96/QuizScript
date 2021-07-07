@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function Resultado(props) {
     const options = props.options.map((option, index) => (
-        <p
-            // key={option.opcao}
-            // onClick={() => props.onVote(index)}
-        >
+        <p>
             {option.opcao} - {option.count} votos
         </p>
         ))
