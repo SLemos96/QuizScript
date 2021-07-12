@@ -24,7 +24,7 @@ export default function Card(props){
 
     function vote(voto){
         // alert("Voce votou:"+voto+" quantidade antiga: "+options[voto].count);
-        options[voto].count = options[voto].count + 1;
+        props.options[voto].count = props.options[voto].count + 1;
         // alert("Nova quantidade: "+options[voto].count)
         setEstado('closed'); //fechando a votação após receber o voto
     }
@@ -32,9 +32,10 @@ export default function Card(props){
     if(estado === 'open'){ //aberto
         return (
             <div>
+                <h1>{props.statement}</h1>
                 <Cabine 
-                    statement={statement}
-                    options={options}
+                    // statement={statement}
+                    options={props.options}
                     onVote={vote}
                 />
             </div>
@@ -42,9 +43,10 @@ export default function Card(props){
     }else{ //fechado
         return (
             <div>
+                <h1>{props.statement}</h1>
                 <Resultado 
-                    statement={statement}
-                    options={options}
+                    // statement={props.statement}
+                    options={props.options}
                 />
             </div>
             )

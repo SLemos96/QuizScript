@@ -9,7 +9,7 @@ export default function Resultado(props) {
 
   return (
     <div>
-        <h1>{props.statement}</h1>
+        {/* <h1>{props.statement}</h1> */}
         {options}
   </div>
   )
