@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Card 
+    statement="Welcome to Your Vue.js App?"
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from './components/Card.vue'
 
 export default {
   name: 'App',
+  data: () => ({
+    options: [
+    {
+        count: 0,
+        opcao: 'time X'
+    },
+    {
+        count: 0,
+        opcao: 'time Y'
+    },
+    {
+        count: 0,
+        opcao: 'time Z'
+    }
+  ]
+  }),
   components: {
-    HelloWorld
+    Card
   }
 }
 </script>
