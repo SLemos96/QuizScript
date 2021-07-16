@@ -5,15 +5,14 @@
         <p class="m5">{{statement}}</p>
         <Cabine
           :options="options"
-          @click="vote"
+          @vote="vote"
         />
       </div>
     </div>
     <div v-else>
       <div class="panel results">
         <Resultado 
-        :questions="questions" 
-        :answers="answers" />
+        :options="options" />
       </div>
     </div>
   </div>
