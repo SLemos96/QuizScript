@@ -12,7 +12,7 @@
 <script>
 export default {
   name: 'Resultado',
-  props: ['options']
+  props: ['statement', 'options']
 }
 </script>
 

@@ -12,6 +12,7 @@
     <div v-else>
       <div class="panel results">
         <Resultado 
+        :statement="statement"
         :options="options" />
       </div>
     </div>
@@ -45,7 +46,7 @@ export default {
   }),
   methods: {
     vote(index){ // capturando o voto do usuário
-        console.log("frase só pra ver se eu to chegando aqui");
+        // console.log("frase só pra ver se eu to chegando aqui");
         this.options[index].count = this.options[index].count + 1;
         this.mode = 'result';
     }
