@@ -1,0 +1,16 @@
+<div *ngIf="mode === 'open'; else closed">
+  <div class="panel question">
+    <p class="m5">{{ statement }}</p>
+    <cabine
+      [options]="options"
+      (click)="vote"
+    >
+    </cabine>
+  </div>
+</div>
+<ng-template #closed>
+  <div class="panel results">
+    <!-- <resultado 
+    [options]="options"></resultado>
+  </div> -->
+</ng-template>
