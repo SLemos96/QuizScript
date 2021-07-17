@@ -16,8 +16,9 @@ export class CardComponent {
   @Input() statement: string
   @Input() options: any[]
 
-  vote(index: number){
-    this.options[index].count = this.options[index].count + 1;
+  vote(i: number){
+    console.log("entrei aqui");
+    this.options[i].count = this.options[i].count + 1;
     this.mode = 'closed';
   }
 

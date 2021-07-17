@@ -3,14 +3,14 @@
     <p class="m5">{{ statement }}</p>
     <cabine
       [options]="options"
-      (click)="vote"
+      (vote)="vote($event)"
     >
     </cabine>
   </div>
 </div>
 <ng-template #closed>
   <div class="panel results">
-    <!-- <resultado 
+    <resultado 
     [options]="options"></resultado>
-  </div> -->
+  </div>
 </ng-template>

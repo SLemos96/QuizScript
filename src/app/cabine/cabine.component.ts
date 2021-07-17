@@ -11,7 +11,7 @@ export class CabineComponent {
     this.options = [];
   }
 
-  @Input() options: any[]
-  @Output() vote = new EventEmitter<number>()
+  @Input() options: any[];
+  @Output() vote:EventEmitter<number> = new EventEmitter<number>();
 
 }
