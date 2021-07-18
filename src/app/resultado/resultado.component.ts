@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'resultado',
   templateUrl: './resultado.component.html',
   styleUrls: ['./resultado.component.css']
 })
-export class ResultadoComponent implements OnInit {
+export class ResultadoComponent{
 
   constructor() {
     this.options = [];
