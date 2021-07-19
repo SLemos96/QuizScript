@@ -1,24 +1,5 @@
-# vuequiz
+# vue app quiz
 
-## Project setup
-```
-npm install
-```
+Projeto para a disciplina de tópicos especiais, da UFRN. 2021.1.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+O projeto estático está hospedado no [Netlify](https://vuequizapp.netlify.app/).
